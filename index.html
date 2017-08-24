@@ -60,12 +60,13 @@
             </div>
             <div class="mid-ground sub-fan-3">
             </div>
+
+      </div>
       <div id="fanSubCategories">
         <div><h4>Exhaust Fans</h4></div>
 
       </div>
 
-      </div>
     </section>
 
     <section id="fan">
@@ -215,22 +216,35 @@
             $('#logo-fan').css({ transform: 'rotate(' + theta + 'rad)' });
             var wScroll = $(window).scrollTop();
   console.log(wScroll);
-            if(wScroll< 480){
+            if(wScroll < 465){
                 $('.mid-ground.sub-fan-1').css({
-                  'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+','+(30+wScroll)+','+(50+wScroll)+')'
+                  'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+','+(45+wScroll)+','+(50+wScroll)+')'
             });
              $('.mid-ground.sub-fan-2').css({
-               'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+','+(30+wScroll/2)+','+(25 + wScroll/1.5)+')'
+               'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+','+(45+wScroll/2)+','+(25 + wScroll/1.5)+')'
             });
             
              $(' .mid-ground.sub-fan-3 ').css({
-               'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+',30,'+(wScroll/3)+')'
+               'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+',45,'+(wScroll/3)+')'
             });
             
              /*$('.mid-ground.forth ').css({
                 'transform' : 'translate('+0+', -'+(wScroll/4)+'%)'
             });*/
         
+            }
+            else if(wScroll>= 465){
+              wScroll = 464;
+               $('.mid-ground.sub-fan-1').css({
+                  'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+','+(45+wScroll)+','+(50+wScroll)+')'
+            });
+             $('.mid-ground.sub-fan-2').css({
+               'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+','+(45+wScroll/2)+','+(25 + wScroll/1.5)+')'
+            });
+            
+             $(' .mid-ground.sub-fan-3 ').css({
+               'transform': 'matrix('+(1+wScroll/1000)+',0,0,'+(1+wScroll/1000)+',45,'+(wScroll/3)+')'
+            });
             }
 
             });
