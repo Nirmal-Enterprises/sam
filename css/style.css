@@ -1,5 +1,4 @@
 body{
-  margin-top:70px;
   font-size:16px;
 }
 
@@ -17,6 +16,7 @@ button{
     padding: 5px 20px;
     border-radius: 5px; 
 }
+
 nav.navbar{
 margin:0;
 }
@@ -24,6 +24,22 @@ margin:0;
   background:#fff;
   border:0;
   font-family:Poppins;
+}
+.logo{
+    background: url("../img/logo-final.jpg") no-repeat;
+    width: 150px;
+    background-size: 150px;
+/*    position: relative;
+    opacity: 0.5;*/
+}
+.logo-fan{
+    background: url(../img/fan-blade-5.png) no-repeat;
+    width: 75px;
+    height: 65px !important;
+    background-size: 100%;
+    position: absolute;
+    transform: rotate(3.14159265rad);
+    opacity: 0.4;
 }
 
 
