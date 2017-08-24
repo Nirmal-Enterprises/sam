@@ -238,3 +238,55 @@ section .card:last-child{
     margin-top: 10px;
     text-decoration: underline;
 }
+section#home{
+    height: 900px;
+    background-color: #47b3e1;
+    padding: 0;
+    background-attachment: fixed;
+              overflow: hidden;
+}
+.container-box.home{
+    height: 600px;
+    width: 100%;
+    background: url(../img/fan1.jpg) no-repeat;
+    background-size: cover;
+    background-color: white;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+.mid-ground{
+    height: 180px;
+    width: 180px;
+    position: sticky;
+    }
+    
+    .mid-ground.sub-fan-1{
+     background: url(../img/breezalit-fan1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 330px;
+    bottom: 310px;
+    }
+    .mid-ground.sub-fan-2{
+    background: url(../img/breezalit-fan2.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 180px;
+    bottom: 160px;
+}
+    
+    .mid-ground.sub-fan-3{
+    background: url(../img/breezalit-fan3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 30px;
+    bottom : 10px;
+    }
+    div#fanSubCategories{
+        margin-top:600px;
+        margin-left:30px;
+        width: 100%;
+        height: 300px;
+    }
