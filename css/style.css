@@ -26,9 +26,31 @@ margin:0;
   font-family:Poppins;
 }
 
+
+.logo{
+    background: url("../img/logo-final.jpg") no-repeat;
+    width: 150px;
+    background-size: 150px;
+/*    position: relative;
+    opacity: 0.5;*/
+}
+.logo-fan{
+    background: url("../img/fan-blade-4.png") no-repeat;
+    width: 75px;
+    height: 75px !important;
+    background-size: 100%;
+    position: absolute;
+    transform: rotate(3.14159265rad);
+    opacity : 0.5;
+}
 .navbar-brand{
-    background: url("../img/logo.PNG") no-repeat;
-        width: 150px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 0;
+}
+.navbar-brand1{
+    
+    width: 150px;
     height: 80px;
     background-size: 150px;
     margin-top: 10px;
